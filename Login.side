@@ -1,0 +1,103 @@
+{
+  "id": "adb2579c-5588-42d4-8562-c25e737b68d9",
+  "version": "2.0",
+  "name": "Login",
+  "url": "https://bangmetricservices.greythr.com/v3/portal/ess/home",
+  "tests": [{
+    "id": "dc6ca5c4-3660-49d9-ab6b-e81d191ae4b6",
+    "name": "gr",
+    "commands": [{
+      "id": "b8bcd05b-4ceb-4f2c-a12b-6b403e4b6fec",
+      "comment": "",
+      "command": "open",
+      "target": "https://bangmetricservices.greythr.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed204f18-b5e0-4f38-8bb9-b5f370c27ec2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1068x668",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4d4973d-9079-4bb4-878b-965ee74b7e30",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "BMIND0082"
+    }, {
+      "id": "762efa8d-c7e4-405c-bfd4-838d3c531401",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd40f40c-701b-43c1-a8f3-3fdffa4668c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Tiger@1212"
+    }, {
+      "id": "cdf6e15a-4e2a-4718-9c60-e53b30ed3c72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-primary",
+      "targets": [
+        ["css=.bg-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "299100ef-a538-40a4-8b79-1642179972c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-container > .hydrated:nth-child(1)",
+      "targets": [
+        ["css=.btn-container > .hydrated:nth-child(1)", "css:finder"],
+        ["xpath=//gt-button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4bad0e4-26e2-4024-87da-dc3c56a37b3a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6c748a54-e236-42ae-9729-0368cef4d53b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://bangmetricservices.greythr.com/v3/portal/ess/home"],
+  "plugins": []
+}
